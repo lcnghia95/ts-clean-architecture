@@ -51,18 +51,18 @@ This repository contains a Node.js application that uses Docker Compose to manag
 **2. Start MongoDB and mongo-express using Docker Compose:**
 
 ```bash
-   docker-compose up -d 
+   docker-compose -f db.docker-compose.yml up -d 
    //or
-   docker compose up -d
+   docker compose -f db.docker-compose.yml up -d
 ```
 
 
 **3. Start the Nodejs application:**
 
 ```bash
-    yarn start
+    yarn start:dev
     //or
-    npm start
+    npm start:dev
 ```
 
 
